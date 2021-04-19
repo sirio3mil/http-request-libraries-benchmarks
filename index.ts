@@ -12,6 +12,7 @@ import coreModels from "./core";
 import corePromisifiedModels from "./core-promisified";
 import fetchModels from "./fetch";
 import requestModels from "./request";
+import bentModels from "./bent";
 
 const suite = new Benchmark.Suite();
 
@@ -36,6 +37,7 @@ const models = [
   ...corePromisifiedModels,
   ...fetchModels,
   ...requestModels,
+  ...bentModels,
 ];
 
 models.forEach((model) => {
